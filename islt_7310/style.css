@@ -1,7 +1,7 @@
 h1 
-{color: #CC0066;
+{color: #FFFFFF;
 }
-h1 {font-size: 30pt; font-family: sans-serif}
+h1 {font-size: 30pt; font-family: sans-serif; border-color: #000000; border-style: solid; border-width: thick; background-color: #0000FF;}
 h3 {color: #CC00CC; font-size: 24pt}
 footer {font-size: 16pt;}
 a:link {color: #FF0000}
@@ -14,6 +14,10 @@ p {font-size: 16pt; font-family:inherit;}
 li.e {color: #0000FF}
 li.f {color: #FF0000}
 li.g {color: #FF0000}
-img {float: right;}
+img {float: right;
+    padding: 12px 12px 0px 12px;
+    margin: 12px 12px 12px 12px}
 div {clear: right;}
 body li {font-size: 14pt}
+body {background: #FFFFCC}
+footer {border-top: 6px solid #000000;}
