@@ -12,3 +12,9 @@ a:focus {color: #FFFF00}
 a:visited {color: #00FF00}
 a:active {color: #0000FF}
 a{text-decoration:none;font-size:10pt;}
+p {font-size: 16pt; font-family:inherit;}
+ul.c {color: red}
+li.e {color: blue}
+img {float: right;}
+div {clear: right;}
+body li {font-size: 14pt}
