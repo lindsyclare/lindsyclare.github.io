@@ -1,7 +1,8 @@
 h1 
 {color: #CC0066;
 }
-
+h1 {font-size: 30pt}
+h1 {font-family: fantasy}
 footer {font-size: 16pt;}
 a:link {color: #FF0000}
 a:hover {color: #FF00FF}
