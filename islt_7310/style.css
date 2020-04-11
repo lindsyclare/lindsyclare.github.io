@@ -2,7 +2,7 @@ h1
 {color: #CC0066;
 }
 h1 {font-size: 30pt;}
-h1 {font-family: sans-serif;}
+h1 {font-family: fantasy;}
 h3 {color: #CC00CC;}
 h3 {font-size: 24pt;}
 footer {font-size: 16pt;}
@@ -13,8 +13,9 @@ a:visited {color: #00FF00}
 a:active {color: #0000FF}
 a{text-decoration:none;font-size:10pt;}
 p {font-size: 16pt; font-family:inherit;}
-ul.c {color: red}
-li.e {color: blue}
+li.e {color: #0000FF}
+li.f {color: #FF0000}
+li.g {color: #FF0000}
 img {float: right;}
 div {clear: right;}
 body li {font-size: 14pt}
