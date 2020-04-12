@@ -1,7 +1,7 @@
 h1 
 {color: #FFFFFF;
 }
-h1 {font-size: 30pt; font-family: sans-serif; border-color: #000000; border-style: solid; border-width: thick; background-color: #0000FF;}
+h1 {font-size: 30pt; font-family:sans-serif; border-color: #000000; border-style: solid; border-width: thick; background-color: #0000FF;}
 h3 {color: #CC00CC; font-size: 24pt}
 footer {font-size: 16pt;}
 a:link {color: #FF0000}
@@ -20,4 +20,9 @@ img {float: right;
 div {clear: right;}
 body li {font-size: 14pt}
 body {background: #FFFFCC}
-footer {border-top: 6px solid #000000;}
+footer {border-top: 6px solid #000000;
+padding-top: 5px}
+ul.a {font-family:monospace}
+ul.b {font-family:monospace}
+ul.c {font-family:monospace}
+body {margin: 15px 15px 15px 15px}
