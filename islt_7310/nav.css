@@ -6,4 +6,24 @@ nav ul li{
     padding: 15px 15px 15px 25px;
     margin-top: 0;
     margin-left: 10px;
+    position: relative;
+}
+nav ul li a{
+    display: inline-block;
+    color: #FFFFCC;
+    padding: 15px 15px 15px 25px
+}
+nav ul li ul {
+    display: none;
+    position: absolute;
+    background-color: #FFFFCC;
+}
+nav ul li:hover ul {
+    display: block;
+}
+nav ul li ul li a{
+    padding: 8px 14px;
+}
+nav ul li ul li a:hover {
+    background-color: #f3f3f3;
 }
