@@ -30,3 +30,8 @@ ul.a {font-family:monospace}
 ul.b {font-family:monospace}
 ul.c {font-family:monospace}
 body {margin: 15px 15px 15px 15px}
+p.k:first-child::first-letter{font-weight: bold;font-style: italic}
+p.l:first-child::first-letter{font-weight: bold;font-style: italic}
+p.m:first-child::first-letter{font-weight: bold;font-style: italic}
+p.l{text-indent: 30px}
+p.m{text-indent: 30px}
