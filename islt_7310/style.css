@@ -1,8 +1,8 @@
 /*Title: Style CSS
     Use: to style html pages
     School/Term: University of Missouri, Spring 2020
-    Validated: April 12, 2020*/
-* {margin: 0; padding: 0;} /*these styles should always be above the media query or it won't be read by the browser*/
+    Validated: April 26, 2020*/
+* {margin: 0; padding: 0;}
 body {margin-left: 30px; width: 95%; background-color: #659DBD;}
 
 main {float: left; width: 70%; height: 600px;}
