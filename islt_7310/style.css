@@ -2,11 +2,11 @@
     Use: to style html pages
     School/Term: University of Missouri, Spring 2020
     Validated: April 12, 2020*/
-* {margin: 0; padding: 0;}
+* {margin: 0; padding: 0;} /*these styles should always be above the media query or it won't be read by the browser*/
 body {margin-left: 30px; width: 95%; background-color: #659DBD;}
 
-main {float: left; width: 550px; height: 600px;}
-aside {float: right; width: 610px; }
+main {float: left; width: 70%; height: 600px;}
+aside {float: right; width: 30%; }
 footer {clear:both;}
 img {float:right; width: 220px; margin-right:0; }
 #floatLeft {float: left; width: 380px; }
@@ -14,6 +14,11 @@ img {float:right; width: 220px; margin-right:0; }
     clear: both;
     float: left;
 }
+
+main class="y" {float: left; width: 70%; height: 600px;}
+aside class="x" {float: right; width: 30%; }
+footer {clear:both;}
+img {float:right; width: 220px; margin-right:0; }
 
 aside li {font-size: 14pt} /*always use the exact container for your li styles..the body is not a specific container*/
 h1 {padding: 10px; font-size: 14pt; font-family:sans-serif; border: 1px solid #000; border-width: thick; background-color: #BC986A; color: #FFFFFF;}
@@ -44,6 +49,7 @@ p.l:first-child::first-letter{font-weight: bold;font-style: italic}
 p.m:first-child::first-letter{font-weight: bold;font-style: italic}
 p.l{text-indent: 30px}
 p.m{text-indent: 30px}
+
 @media screen and (max-width:959px){
     #container{
         width:100%;
@@ -71,4 +77,3 @@ p.m{text-indent: 30px}
         width:320px;
     } 
 }
-
