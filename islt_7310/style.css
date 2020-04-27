@@ -2,34 +2,43 @@
     Use: to style html pages
     School/Term: University of Missouri, Spring 2020
     Validated: April 12, 2020*/
-h1 
-{color: #FFFFFF;
+* {margin: 0; padding: 0;}
+body {margin-left: 30px; width: 95%; background-color: #659DBD;}
+
+main {float: left; width: 550px; height: 600px;}
+aside {float: right; width: 610px; }
+footer {clear:both;}
+img {float:right; width: 220px; margin-right:0; }
+#floatLeft {float: left; width: 380px; }
+#floatUnder{
+    clear: both;
+    float: left;
 }
-h1 {font-size: 30pt; font-family:sans-serif; border-color: #000000; border-style: solid; border-width: thick; background-color: #BC986A;}
-h3 {color: #FBEEC1; font-size: 24pt}
-footer {font-size: 16pt;}
-a:link {color: #FBEE61}
-a:hover {color: #FF00FF}
-a:focus {color: #FFFF00}
-a:visited {color: #DAAD86}
-a:active {color: #0000FF}
+
+aside li {font-size: 14pt} /*always use the exact container for your li styles..the body is not a specific container*/
+h1 {padding: 10px; font-size: 14pt; font-family:sans-serif; border: 1px solid #000; border-width: thick; background-color: #BC986A; color: #FFFFFF;}
+
+h3 {color: #FBEEC1; font-size: 24pt;}
+footer {font-size: 16pt; border-top: 6px solid #000000;
+padding-top: 5px;}
+a:link {color: #FBEE61;}
+a:hover {color: #FF00FF;}
+a:focus {color: #FFFF00;}
+a:visited {color: #DAAD86;}
+a:active {color: #0000FF;}
 a{text-decoration:none;font-size:10pt;}
-p {font-size: 16pt; font-family:inherit;}
-li.e {color: #FBEEC1}
-li.f {color: #FF0000}
-li.g {color: #FF0000}
-img {float: right;
-    padding: 12px 12px 0px 12px;
-    margin: 12px 12px 12px 12px}
-div {clear: right;}
-body li {font-size: 14pt}
-body {background: #659DBD}
-footer {border-top: 6px solid #000000;
-padding-top: 5px}
+p {font-size: 14pt; font-family:inherit;}
+li.e {color: #FBEEC1;}
+li.f {color: #FF0000;}
+li.g {color: #FF0000;}
+
+/*div {clear: right;} -- if this is for another page, you need to give it a class or ID*/
+
+
 ul.a {font-family:monospace}
 ul.b {font-family:monospace}
 ul.c {font-family:monospace}
-body {margin: 15px 15px 15px 15px}
+
 p.k:first-child::first-letter{font-weight: bold;font-style: italic}
 p.l:first-child::first-letter{font-weight: bold;font-style: italic}
 p.m:first-child::first-letter{font-weight: bold;font-style: italic}
@@ -62,3 +71,4 @@ p.m{text-indent: 30px}
         width:320px;
     } 
 }
+
