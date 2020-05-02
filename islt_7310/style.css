@@ -2,6 +2,11 @@
     Use: to style html pages
     School/Term: University of Missouri, Spring 2020
     Validated: April 26, 2020*/
+@font-face{
+    font-family: 'PlayfairDisplay', serif;
+    src: url("PlayfairDisplay-VariableFont_wght.ttf")
+}
+
 * {margin: 0; padding: 0;}
 body {margin-left: 30px; width: 95%; background-color: #659DBD;}
 
@@ -34,7 +39,7 @@ footer{
 aside li {font-size: 14pt}
 h1 {padding: 10px; font-size: 14pt; font-family:sans-serif; border: 1px solid #000; border-width: thick; background-color: #BC986A; color: #FFFFFF;}
 
-h3 {color: #FBEEC1; font-size: 24pt;}
+h3 {color: #FBEEC1; font-size: 24pt; font: "PlayfairDisplay", serif;}
 footer {font-size: 16pt; border-top: 6px solid #000000;
 padding-top: 5px;}
 a:link {color: #FBEE61;}
@@ -99,4 +104,41 @@ p.m{text-indent: 30px}
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+/*Print stylesheet*/
+@media print {
+    *{
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;    
+    }
+    nav, #iconA, #iconB {
+        display: none;
+    }
+    header {
+        margin-bottom: 0;
+        border: none;
+        text-align: center;
+    }
+    h1 {
+        border: none;
+    }
+    a[href^="http:"]::after {
+        content: " ["attr(href)"]";
+        color: blue;
+    }
+    @page {
+        margin: .5cm;
+    }
+    @page :first {
+        margin-top: 2cm;
+    }
+    p, ul {
+        font-size: 11pt;
+    }
+    aside {
+        position:inherit;
+    }
 }
