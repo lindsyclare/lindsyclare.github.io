@@ -10,8 +10,8 @@
 * {margin: 0; padding: 0;}
 body {margin-left: 30px; width: 95%; background-color: #659DBD;}
 
-main {float: left; width: 70%; height: 600px;}
-aside {float: right; width: 30%; }
+main {float: left; width: 60%; height: 600px;}
+aside {float: right; width: 40%; }
 footer {clear:both;}
 img {float:right; width: 220px; margin-right:0; }
 #floatLeft {float: left; width: 380px; }
@@ -39,15 +39,15 @@ footer{
 aside li {font-size: 14pt}
 h1 {padding: 10px; font-size: 14pt; font-family:sans-serif; border: 1px solid #000; border-width: thick; background-color: #BC986A; color: #FFFFFF;}
 
-h3 {color: #FBEEC1; font-size: 24pt; font: "PlayfairDisplay", serif;}
+h3 {color: #FBEEC1; font-size: 24pt; font-family: "PlayfairDisplay", serif;}
 footer {font-size: 16pt; border-top: 6px solid #000000;
 padding-top: 5px;}
-a:link {color: #FBEE61;}
+a:link {color: #FFFFFF;}
 a:hover {color: #FF00FF;}
 a:focus {color: #FFFF00;}
 a:visited {color: #DAAD86;}
 a:active {color: #0000FF;}
-a{text-decoration:none;font-size:10pt;}
+a{text-decoration:none;font-size:14pt;}
 p {font-size: 14pt; font-family:inherit;}
 li.e {color: #FBEEC1;}
 li.f {color: #FF0000;}
@@ -95,7 +95,7 @@ p.m{text-indent: 30px}
     position: relative;
     width: 100%;
     padding-bottom; 56.25%;
-    height: 0;
+    height: 75%;
 }
 
 .iframe-container iframe{
@@ -140,5 +140,11 @@ p.m{text-indent: 30px}
     }
     aside {
         position:inherit;
+    }
+    img{
+        max-width: 500px;
+    }
+    aside{
+        page-break-before: always;
     }
 }
