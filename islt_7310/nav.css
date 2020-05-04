@@ -42,22 +42,31 @@ background-color: #f3f3f3;
     header {
         position: relative;
         height: 40px;
-        display: block;
+        display: inline-block;
         background-color: #659DBD;
         width: 100%;
     }
+    nav {
+        position: absolute;
+        display: block;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        z-index: 10;
+        
+        
+    }
     #hamburger {
-        display: inline-block;
-        padding-right: 50px;
+        display: block;
         width: 26px;
-        float: left;
         font-size: 2em;
     }
+    
     nav ul, nav:active ul {
         display: none;
         position: absolute;
-        padding: 20px 20px 20px 0px;
-        top: 63px;
+        padding: 0 20px 20px 0px;
+        top: 30px;
     }
     nav:hover ul {
         display: block;
