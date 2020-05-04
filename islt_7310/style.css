@@ -10,7 +10,7 @@
 * {margin: 0; padding: 0;}
 body {margin-left: 30px; width: 95%; background-color: #659DBD;}
 
-main {float: left; width: 60%; height: 600px;}
+main {float: left; width: 60%; height: 1000px;}
 aside {float: right; width: 40%; }
 footer {clear:both;}
 img {float:right; width: 220px; margin-right:0; }
@@ -41,21 +41,20 @@ width: 15px;
     transform: scale(2.0);
 }
 
-#Goal1 {
-    font-size: 24pt;
+#Goal1 p{
+    font-size: 16pt;
     padding-bottom: 20px;
 }
 
-#Goal2 {
-    font-size: 24pt;
+#Goal2 p{
+    font-size: 16pt;
     padding-bottom: 20px;
 }
 
-#Goal3 {
-    font-size: 24pt;
+#Goal3 p{
+    font-size: 16pt;
     padding-bottom: 20px;
 }
-
 
 footer{
     background-image:url(images/footerbackground.png)
