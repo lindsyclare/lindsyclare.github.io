@@ -8,21 +8,18 @@
 }
 
 * {margin: 0; padding: 0;}
-body {margin-left: 30px; width: 95%; background-color: #659DBD;}
+body {margin-left: 30px; width: 95%; background-color: #659DBD; height: 1000px; min-height: 100%;}
 
-main {float: left; width: 60%; height: 1000px;}
-aside {float: right; width: 40%; }
-footer {clear:both;}
-img {float:right; width: 220px; margin-right:0; }
-#floatLeft {float: left; width: 380px; }
-#floatUnder{
-    clear: both;
-    float: left;
-}
-
-main .y {float: left; width: 70%; height: 600px;}
-aside .x {float: right; width: 30%; }
-footer {clear:both;}
+/*all pages*/
+h1 {padding: 10px; font-size: 14pt; font-family:sans-serif; border: 1px solid #000; border-width: thick; background-color: #BC986A; color: #FFFFFF;}
+h3 {color: #FBEEC1; font-size: 24pt; font-family: "PlayfairDisplay", serif;}
+footer {font-size: 16pt; border-top: 6px solid #000000; padding-top: 5px; bottom: 0;}
+a:link {color: #FFFFFF;}
+a:hover {color: #FF00FF;}
+a:focus {color: #FFFF00;}
+a:visited {color: #DAAD86;}
+a:active {color: #0000FF;}
+a{text-decoration:none;font-size:14pt;}
 
 #iconA {
 float: left;
@@ -41,85 +38,100 @@ width: 15px;
     transform: scale(2.0);
 }
 
+/*experience page*/
 #Goal1 p{
     font-size: 16pt;
     padding-bottom: 20px;
+    padding-left: 50px;
+    width: 150%;
 }
 
 #Goal2 p{
     font-size: 16pt;
     padding-bottom: 20px;
+    padding-left: 50px;
+    width: 150%;
 }
 
 #Goal3 p{
     font-size: 16pt;
     padding-bottom: 20px;
+    padding-left: 50px;
+    width: 150%;
 }
 
 footer{
     background-image:url(images/footerbackground.png)
 }
 
-aside li {font-size: 14pt}
-h1 {padding: 10px; font-size: 14pt; font-family:sans-serif; border: 1px solid #000; border-width: thick; background-color: #BC986A; color: #FFFFFF;}
-
-h3 {color: #FBEEC1; font-size: 24pt; font-family: "PlayfairDisplay", serif;}
-footer {font-size: 16pt; border-top: 6px solid #000000;
-padding-top: 5px;}
-a:link {color: #FFFFFF;}
-a:hover {color: #FF00FF;}
-a:focus {color: #FFFF00;}
-a:visited {color: #DAAD86;}
-a:active {color: #0000FF;}
-a{text-decoration:none;font-size:14pt;}
-p {font-size: 14pt; font-family:inherit;}
-li.e {color: #FBEEC1;}
-li.f {color: #FF0000;}
-li.g {color: #FF0000;}
-
-/*div {clear: right;} -- if this is for another page, you need to give it a class or ID*/
+/*accomplishments page*/
+main .y {float: left; width: 70%; height: 600px;}
+aside .x {float: right; width: 30%;}
+footer {clear:both;}
+p.deg {font-size: 25px; padding-top: 20px; font-weight: bold;}
+p.certificates {font-size: 25px; padding-top: 20px; font-weight: bold;}
+p.grad {font-size: 25px; padding-top: 20px; font-weight: bold;}
+ul.a {font-family:monospace; font-size: 18pt; padding-bottom: 20px; padding-right: 20px;}
+ul.b {font-family:monospace; font-size: 18pt; padding-bottom: 20px;}
+ul.c {font-family:monospace; font-size: 18pt;}
 
 
-ul.a {font-family:monospace}
-ul.b {font-family:monospace}
-ul.c {font-family:monospace}
+/*home page*/
+main {float: left; width: 55%; height: 100%; padding-right: 5%;}
+aside {float: right; width: 35%; padding-left: 5%;}
+footer {clear:both;}
+img {float:above; width: 220px; margin-right:0; }
+#floatLeft {float: left; width: 380px; }
+#floatUnder{
+    clear: both;
+    float: left;
+}
+p.info {font-size: 14pt;}
+ul.cert {font-size: 14pt;}
+ul.education {font-size: 14pt;}
+ul.career {font-size: 14pt;}
+blockquote.quote {font-size: 14pt;}
+p.deg {font-size: 25px; padding-top: 20px; font-weight: bold;}
+p.certificates {font-size: 25px; padding-top: 20px; font-weight: bold;}
+p.grad {font-size: 25px; padding-top: 20px; font-weight: bold;}
 
+/*reflection page*/
 p.k:first-child::first-letter{font-weight: bold;font-style: italic}
 p.l:first-child::first-letter{font-weight: bold;font-style: italic}
 p.m:first-child::first-letter{font-weight: bold;font-style: italic}
-p.l{text-indent: 30px}
-p.m{text-indent: 30px}
+p.k{font-size: 18pt; padding-top: 20px; text-align:center; padding-bottom: 10px;}
+p.l{text-indent: 30px; font-size: 18pt; text-align: center; padding-bottom: 10px;}
+p.m{text-indent: 30px; font-size: 18pt; text-align: center;}
 
-@media screen and (max-width:959px){
-    #container{
-        width:100%;
-    }
-    #left-column{
-        width:70%;
-    }
-    #right-column{
-        width:30%;
-    }
-    img{
-        width:100%;
-    }
-}
-@media screen and (max-width:640px){/*I would change this down to 1 column..so positioning them on top of one another*/
-    body{width: 90%;}
-    main{position: relative; width:100%; top: 80px;}
-}
 
-@media screen and (max-width:320px){
-   #container{
-        width:320px;
-    } 
+/*responsive*/
+
+@media screen and (max-width:640px){
+    body{
+        width: 90%;
+
+    }
+    main{
+        position: relative; 
+        width:100%; 
+        top: 80px;
+        height: 100%;
+        min-height: 100%;
+        padding-bottom: 100px;
+    }
+    #Goal1 p, #Goal2 p, #Goal3 p{
+    font-size: 12pt;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    width: 90%;
+}
 }
 
 .iframe-container{
     position: relative;
     width: 100%;
-    padding-bottom; 56.25%;
-    height: 75%;
+    padding-bottom: 56.25%;
+    height: 0;
 }
 
 .iframe-container iframe{
