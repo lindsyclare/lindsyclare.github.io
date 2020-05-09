@@ -30,16 +30,40 @@
                     <li><a href="experience.html/#Goal3">Summer School Teacher</a></li>
                 </ul>
             <li><a href=reflection.html>Reflection</a></li>
-            <li class="lastMobile"><a href="#">Contact</a></li>
+            <li class="lastMobile"><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
-
-    <main class="w">
-        <p>First Name</p>
-        <p>Last Name</p>
-        <p>Email</p>
-        <p>Type your message here</p>
-        <p>Send</p>
+    
+    <main>
+        <form action="mailto:lcfwx@mail.missouri.edu?Subject=Professional%20Website%20Contact" method="post" enctype="text/plain">
+            
+            <br><div>
+                <label for="FirstName">First Name</label>
+                <input type="text" name="First Name" id="First Name" placeholder="First Name" required>
+            </div>
+            
+            <div>
+                <label for="Last Name">Last Name</label>
+                <input type="text" name="Last Name" id="Last Name" placeholder="Last Name" required>
+            </div>
+        
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Email" required>
+            </div>
+            
+            <div>
+                <!--<label for="Message">Message</label><br>-->
+                <textarea id="Message" name="Message" placeholder="Write your message here!"></textarea>
+            </div>
+           
+            <div>
+                <input type="submit" id="button" value="Submit">
+                <input type="reset" id="reset">
+            </div>
+        
+        </form>
+       
     </main>
     
     <aside class="v">
