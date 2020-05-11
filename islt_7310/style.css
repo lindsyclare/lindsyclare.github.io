@@ -1,24 +1,24 @@
 /*Title: Style CSS
     Use: to style html pages
     School/Term: University of Missouri, Spring 2020
-    Validated: May 3, 2020*/
+    Validated: May 9, 2020*/
 @font-face{
     font-family: 'PlayfairDisplay', serif;
     src: url("PlayfairDisplay-VariableFont_wght.ttf")
 }
 
 * {margin: 0; padding: 0;}
-body {margin-left: 30px; width: 95%; background-color: #659DBD; height: 1000px; min-height: 100%;}
+body {margin-left: 30px; width: 95%; background-color: #C9DAD8; height: 1000px; min-height: 100%;}
 
 /*all pages*/
-h1 {padding: 10px; font-size: 30pt; font-family:sans-serif; border: 1px solid #000; border-width: thick; background-color: #BC986A; color: #FFFFFF;}
-h3 {color: #FBEEC1; font-size: 24pt; font-family: "PlayfairDisplay", serif;}
-footer {font-size: 16pt; border-top: 6px solid #000000; padding-top: 5px; bottom: 0;}
-a:link {color: #FFFFFF;}
+h1 {padding: 10px; font-size: 30pt; font-family:fantasy; color: #7A4938;}
+h3 {color: #FFFFFF; font-size: 24pt; font-family: cursive;}
+footer {font-size: 16pt; border-top: 6px solid #000000; padding-top: 5px; bottom: 0; position: inline-block;}
+a:link {color: #0000FF;}
 a:hover {color: #FF00FF;}
 a:focus {color: #FFFF00;}
 a:visited {color: #DAAD86;}
-a:active {color: #0000FF;}
+a:active {color: #FFFFFF;}
 a{text-decoration:none;font-size:14pt;}
 
 #iconA {
@@ -61,7 +61,7 @@ width: 15px;
 }
 
 footer{
-    background-image:url(images/footerbackground.png)
+    background-image:url(images/footerbackground.jpg)
 }
 
 /*accomplishments page*/
@@ -109,20 +109,23 @@ tr:nth-child(odd) {
 main {float: left; width: 55%; height: 100%; padding-right: 5%;}
 aside {float: right; width: 35%; padding-left: 5%;}
 footer {clear:both;}
-img {float:above; width: 220px; margin-right:0; }
+img {float:above; width: 220px; margin-right:0;}
 #floatLeft {float: left; width: 380px; }
 #floatUnder{
     clear: both;
     float: left;
 }
-p.info {font-size: 14pt;}
-ul.cert {font-size: 14pt;}
-ul.education {font-size: 14pt;}
-ul.career {font-size: 14pt;}
-blockquote.quote {font-size: 14pt;}
-p.deg {font-size: 25px; padding-top: 20px; font-weight: bold;}
-p.certificates {font-size: 25px; padding-top: 20px; font-weight: bold;}
-p.grad {font-size: 25px; padding-top: 20px; font-weight: bold;}
+p.info {font-size: 16pt;}
+ul.cert {font-size: 16pt;}
+ul.education {font-size: 16pt;}
+ul.career {font-size: 16pt;}
+blockquote.quote {font-size: 16pt;}
+p.overview {font-size: 16pt; padding-top: 10px;}
+p.certifications {font-size: 20pt; font-weight: bold;}
+p.ed {font-size: 20pt; font-weight: bold;}
+p.career {font-size: 20pt; font-weight: bold;}
+p.positions {font-size: 20pt; font-weight: bold;}
+ul.held {font-size: 16pt;}
 
 /*reflection page*/
 p.k:first-child::first-letter{font-weight: bold;font-style: italic}
@@ -133,6 +136,10 @@ p.l{text-indent: 30px; font-size: 18pt; text-align: center; padding-bottom: 10px
 p.m{text-indent: 30px; font-size: 18pt; text-align: center;}
 
 /*contact*/
+#funpic {
+    padding-top: 50px;
+    width: 400px;
+}
 
 label {
     float: left;
@@ -171,14 +178,19 @@ textarea {
     background-color: #f2f2f2;
     padding: 20px;
 }
+/*resume*/
+iframe {
+    width: 560px;
+    height: 315px;
+}
 
 /*responsive*/
 
 @media screen and (max-width:640px){
     body{
         width: 90%;
-
     }
+    
     main{
         position: relative; 
         width:100%; 
@@ -187,6 +199,11 @@ textarea {
         min-height: 100%;
         padding-bottom: 100px;
     }
+    
+    footer{
+        position: relative;
+    }
+    
     #Goal1 p, #Goal2 p, #Goal3 p{
     font-size: 12pt;
     padding-bottom: 20px;
