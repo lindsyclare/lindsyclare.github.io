@@ -8,12 +8,12 @@
 }
 
 * {margin: 0; padding: 0;}
-body {margin-left: 30px; width: 95%; background-color: #C9DAD8; height: 1000px; min-height: 100%;}
+body {margin-left: 30px; width: 95%; background-color: #C9DAD8; min-height: 100%;}
 
 /*all pages*/
 h1 {padding: 10px; font-size: 30pt; font-family:fantasy; color: #7A4938;}
 h3 {color: #FFFFFF; font-size: 24pt; font-family: cursive;}
-footer {font-size: 16pt; border-top: 6px solid #000000; padding-top: 5px; bottom: 0; position: inline-block;}
+footer {font-size: 16pt; border-top: 6px solid #000000; padding-top: 5px; bottom: 0; clear:both; max-width: 100%;;}
 a:link {color: #0000FF;}
 a:hover {color: #FF00FF;}
 a:focus {color: #FFFF00;}
@@ -67,7 +67,6 @@ footer{
 /*accomplishments page*/
 main .y {float: left; width: 70%; height: 600px;}
 aside .x {float: right; width: 30%;}
-footer {clear:both;}
 p.deg {font-size: 25px; padding-top: 20px; font-weight: bold;}
 p.certificates {font-size: 25px; padding-top: 20px; font-weight: bold;}
 p.grad {font-size: 25px; padding-top: 20px; font-weight: bold;}
@@ -79,15 +78,15 @@ caption {
     padding-top: 20px;
 }
 table {
-    width: 800px;
+    width: 250px;
 }
 th {
     text-align: left;
     background-color: #FBEEC1;
-    font-size: 18pt;
+    font-size: 14pt;
 }
 td {
-    font-size: 16pt;
+    font-size: 12pt;
 }
 table, th, td {
     border: 5px solid #000000;
@@ -108,8 +107,7 @@ tr:nth-child(odd) {
 /*home page*/
 main {float: left; width: 55%; height: 100%; padding-right: 5%;}
 aside {float: right; width: 35%; padding-left: 5%;}
-footer {clear:both;}
-img {float:above; width: 220px; margin-right:0;}
+img {float:inherit; width: 220px; margin-right:0;}
 #floatLeft {float: left; width: 380px; }
 #floatUnder{
     clear: both;
@@ -195,13 +193,13 @@ iframe {
         position: relative; 
         width:100%; 
         top: 80px;
-        height: 100%;
+        height: 250%;
         min-height: 100%;
         padding-bottom: 100px;
     }
     
     footer{
-        position: relative;
+        position:inherit;
     }
     
     #Goal1 p, #Goal2 p, #Goal3 p{
@@ -229,7 +227,7 @@ iframe {
         text-align:left;
     }
     #ResponsiveTable td:before {
-        position:absolute;
+        position:inherit;
         top:5px;
         left:5px;
         width:40%;
